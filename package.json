@@ -1,42 +1,38 @@
 {
-  "name": "vuc",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vuc3",
+  "version": "0.1.2",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vuc ./src/index.js ",
     "lint": "vue-cli-service lint"
   },
+  "main": "./dist/vuc.umd.js",
   "dependencies": {
+    "ant-design-vue": "^2.2.5",
+    "codemirror": "^5.62.0",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "escodegen": "^2.0.0",
+    "esprima": "^4.0.1",
+    "vue": "^3.2.24"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.16.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/compiler-sfc": "^3.2.24",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
+    "eslint-plugin-vue": "^7.0.0",
+    "less-loader": "^5.0.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "files": [
+    "/dist"
   ]
 }

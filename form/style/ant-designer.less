@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+}
+
+.vuc-app-wrapper {
+  .ant-form[data-ast-id]:empty {
+    min-height: 20px;
+  }
+
+  .ant-row, .ant-col {
+    &[data-ast-id]:empty {
+      min-height: 40px;
+    }
+  }
+
+  .ant-form-item {
+    &[data-ast-id] > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children:empty {
+      display: inline-block;
+      min-height: 19px;
+    }
+  }
+}
