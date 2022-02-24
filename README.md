@@ -2,7 +2,9 @@
 
 `Vuc3`是一个基于`Vue`3.0的`SFC`模板语法的可视化代码编辑器（UI框架依赖`Ant Design of Vue`），只需简单几步就能基于已有的表单组件实现一个可视化的表单编辑器。
 
-## 示例
+`Vue`2.0版本 [github](https://github.com/yuexing91/vuc) [gitee](https://gitee.com/yuexing91/vuc)
+
+## 预览
 
 ![预览](https://img.wenhairu.com/images/2021/12/06/pFJQC.gif)
 
